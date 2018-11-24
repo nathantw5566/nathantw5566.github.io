@@ -18,6 +18,14 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+	<script src="js/myscripts.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -29,60 +37,206 @@
 
   <!-- Add your site or application content here -->
   <image src="images/typewriter.jpg" style="width:1920px;height:760px"></image>
-  <div style="margin-left:40%;"><h1 >Nathan Hsu Portfolio Page</h1></div>
-  <div>
+	<div style="margin-left:40%;"><h1 >Nathan Hsu Portfolio Page</h1></div>
+	<div class="container">
+		<h2><a href="https://www.linkedin.com/in/nathan-hsu-04710397/">LinkedIn</a></h2>
+  	<h2><a href="https://github.com/nathantw5566">Github</a></h2>
+		<h2>Projects</h2>
+		<div class="panel-group" id="accordion">
 
-  	<ul>
-  		<h2><a href="https://www.linkedin.com/in/nathan-hsu-04710397/">LinkedIn</a></h2>
-  		<h2><a href="https://github.com/nathantw5566">Github</a></h2>
-  		<h2>Projects</h2>
- 		<ul><h3>Full Stack Related</h3>
- 			<ul>
- 				<li><a href="https://github.com/CS542-NBA/NBA-data">NBA Statistic Query System</a>
- 					<p>We use Oracle, NodeJS and JavaScript D3 to build a full stack application which allows users to see NBA statistic in the webpage rendered by D3 data visulization tool. The data is fetched dynamically through NodeJS server to the Oracle database.
- 				</li>
- 			</ul>
- 		</ul>
-  		<ul><h3>React/Redux/Express-related</h3>
-  			<ul>
-          <li><a href="https://mypostreact.herokuapp.com/">myPostsApp</a>
-            <p>A React web application that allows users to add new posts and see the content! It will takes a while to load the app from Heroku. The Github link is <a href="https://github.com/nathantw5566/mypostreact">here</a></p>
-          </li>
-  				<li><a href="https://github.com/nathantw5566/myweatherreact">myWeatherApp</a>
-  					<p>A React web application that allows users to search up to 5 cities, and then show 5 weather forcasts for each of them, and present in beautifle chart! </p>
-  				</li>
-  				<li><a href="https://github.com/nathantw5566/mybooklistreact">myBookListApp</a>
-  					<p>A React web application that have a list of book and pages, and the users can click the book they are interested in and show more detail!</p>
-  				</li>
-  				<li><a href="https://github.com/nathantw5566/myyoutubereact">myYoutubeApp</a>
-  					<p>A React web application that allows users to search youtube video and play. The application will automatically detect the search term and do the searching!</p>
-  				</li>
-					<li><a href="https://github.com/nathantw5566/node_rest_shop">rest-node-shop</a>
-  					<p>RESTful API built in NodeJS, with JWT authorization, and ability to sign up, and CRUD to products/orders</p>
-  				</li>
-  			</ul>
-  		</ul>
-  		<ul><h3>Java Related</h3>
-  			<ul>
-  				<li><a href="https://github.com/Dasd1ngo/ARSBombSquad">Flight Ticket Booking System</a>
-  				</li>
-  			</ul>
-  		</ul>
-  		<ul><h3>Python and Machine Learning Related</h3>
-  			<ul>
-  			<li><a>Normal/Fallen Tree Distinguish Agent using Neural Network</a>
-  				<p>Collected the image raw data by ourselves, used Tensorflow, applied on AWS, be able to classify the image with accuracy rate equalt to 85%. Didn't provide the link due to course policy</p>
-  			</li>
-  			</ul>
-  		</ul>
-  	</ul>
+				<div class="controls">
+						<button class="btn btn-primary open-button" type="button">
+							Open all
+						</button>
+						<button class="btn btn-primary close-button" type="button">
+							Close all
+						</button>
+					</div>
+
+
+			<div class="panel panel-default">
+				<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_fullstack" aria-expanded="true" aria-controls="collapse_fullstack">
+					<h4 class="panel-title">
+						<a data-toggle="collapse"  href="#collapse_fullstack">Full Stack Related</a>
+					</h4>
+				</div>
+				<div id="collapse_fullstack" class="panel-collapse collapse in">
+					<div class="panel-body">
+							<ul>
+								<li><a href="https://github.com/CS542-NBA/NBA-data">NBA Statistic Query System</a>
+									<p>We use Oracle, NodeJS and JavaScript D3 to build a full stack application which allows users to see NBA statistic in the webpage rendered by D3 data visulization tool. The data is fetched dynamically through NodeJS server to the Oracle database.
+								</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="panel panel-default">
+					<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_reactredux" aria-expanded="true" aria-controls="collapse_reactredux">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse_reactredux">React/Redux/Express-related</a>
+						</h4>
+					</div>
+					<div id="collapse_reactredux" class="panel-collapse collapse in">
+							<div class="panel-body">
+
+								<div class="panel panel-default">
+									<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_mypostapp" aria-expanded="true" aria-controls="collapse_mypostapp">
+										<h4 class="panel-title">
+											<a data-toggle="collapse"  href="#collapse_mypostapp">myPostsApp</a>
+										</h4>
+									</div>
+									<div id="collapse_mypostapp" class="panel-collapse collapse in">
+										<div class="panel-body">
+												<ul>
+													<li><a href="https://mypostreact.herokuapp.com/">myPostsApp</a>
+														<p>A React web application that allows users to add new posts and see the content! It will takes a while to load the app from Heroku. The Github link is <a href="https://github.com/nathantw5566/mypostreact">here</a></p>
+													</li>
+												</ul>
+										</div>
+									</div>
+								</div>
+								
+								<div class="panel panel-default">
+										<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_myweatherapp" aria-expanded="true" aria-controls="collapse_myweatherapp">
+											<h4 class="panel-title">
+												<a data-toggle="collapse"  href="#collapse_myweatherapp">myWeatherApp</a>
+											</h4>
+										</div>
+										<div id="collapse_myweatherapp" class="panel-collapse collapse in">
+											<div class="panel-body">
+													<ul>
+														<li><a href="https://github.com/nathantw5566/myweatherreact">myWeatherApp</a>
+															<p>A React web application that allows users to search up to 5 cities, and then show 5 weather forcasts for each of them, and present in beautifle chart! </p>
+														</li>
+													</ul>
+											</div>
+										</div>
+									</div>
+								
+
+									<div class="panel panel-default">
+											<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_mybooklistapp" aria-expanded="true" aria-controls="collapse_mybooklistapp">
+												<h4 class="panel-title">
+													<a data-toggle="collapse"  href="#collapse_mybooklistapp">myBookListApp</a>
+												</h4>
+											</div>
+											<div id="collapse_mybooklistapp" class="panel-collapse collapse in">
+												<div class="panel-body">
+														<ul>
+															<li><a href="https://github.com/nathantw5566/mybooklistreact">myBookListApp</a>
+																<p>A React web application that have a list of book and pages, and the users can click the book they are interested in and show more detail!</p>
+															</li>
+														</ul>
+												</div>
+											</div>
+										</div>
+
+									
+										<div class="panel panel-default">
+												<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_myyoutubeapp" aria-expanded="true" aria-controls="collapse_myyoutubeapp">
+													<h4 class="panel-title">
+														<a data-toggle="collapse"  href="#collapse_myyoutubeapp">myYoutubeApp</a>
+													</h4>
+												</div>
+												<div id="collapse_myyoutubeapp" class="panel-collapse collapse in">
+													<div class="panel-body">
+															<ul>
+																<li><a href="https://github.com/nathantw5566/myyoutubereact">myYoutubeApp</a>
+																	<p>A React web application that allows users to search youtube video and play. The application will automatically detect the search term and do the searching!</p>
+																</li>
+															</ul>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="panel panel-default">
+													<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_shopapi" aria-expanded="true" aria-controls="collapse_shopapi">
+														<h4 class="panel-title">
+															<a data-toggle="collapse"  href="#collapse_shopapi">rest-node-shop RESTful API</a>
+														</h4>
+													</div>
+													<div id="collapse_shopapi" class="panel-collapse collapse in">
+														<div class="panel-body">
+																<ul>
+																	<li><a href="https://github.com/nathantw5566/node_rest_shop">rest-node-shop RESTful API</a>
+																		<p>RESTful API built in NodeJS, with JWT authorization, and ability to sign up, and CRUD to products/orders</p>
+																	</li>
+																</ul>
+														</div>
+													</div>
+												</div>
+							</div>
+					</div>
+				</div>
+
+
+
+			<div class="panel panel-default">
+						<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_java" aria-expanded="true" aria-controls="collapse_java">
+							<h4 class="panel-title">
+								<a data-toggle="collapse"  href="#collapse_java">Java Related</a>
+							</h4>
+						</div>
+						<div id="collapse_java" class="panel-collapse collapse in">
+							<div class="panel-body">
+									<ul>
+										<li><a href="https://github.com/Dasd1ngo/ARSBombSquad">Flight Ticket Booking System</a>
+											
+										</li>
+									</ul>
+							</div>
+						</div>
+			</div>
+
+			<div class="panel panel-default">
+					<div class="panel-heading trigger collapsed" data-toggle="collapse" href="#collapse_python" aria-expanded="true" aria-controls="collapse_python">
+						<h4 class="panel-title">
+							<a data-toggle="collapse"  href="#collapse_python">Python and Machine Learning Related</a>
+						</h4>
+					</div>
+					<div id="collapse_python" class="panel-collapse collapse in">
+						<div class="panel-body">
+								<ul>
+									<li><a href="">Normal/Fallen Tree Distinguish Agent using Neural Network</a>
+										<p>Collected the image raw data by ourselves, used Tensorflow, applied on AWS, be able to classify the image with accuracy rate equalt to 85%. Didn't provide the link due to course policy</p>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+		</div>
+
+
+
+
 	</div>
-	<a href="https://icons8.com">Icon pack by Icons8</a>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+
+
+<div>
+</div>
+<div></div>
+
+<footer class="container" style="background: #2d3246; width: 100%; height: 50px;">
+		<a style="position:relative; bottom: 0px; left:45%" href="https://icons8.com">Icon pack by Icons8</a>
+</footer>
+	
+
+
+
+
+  <!-- <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>
